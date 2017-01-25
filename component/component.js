@@ -60,8 +60,9 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
         apiUrl              : 'https://compute.jp-east.idcfcloud.com/client/api',
         apiKey              : '',
         secretKey           : '',
-        template            : 'Ubuntu Server 16.04 LTS 64-bit',
         zone                : 'henry',
+        template            : 'Ubuntu Server 16.04 LTS 64-bit',
+        sshUser             : 'ubuntu',
         serviceOffering     : 'light.S1',
         expunge             : '',
       });
