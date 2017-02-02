@@ -49,7 +49,7 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
     zoneChoices: ZONES,
     apiUrlChoices: URLS,
     offeringChoices: OFFERINGS,
-    cloudstackConfig: Ember.computed.alias('model.%%DRIVERNAME%%Config'),
+    idcfConfig: Ember.computed.alias('model.%%DRIVERNAME%%Config'),
 
 /* ^--- And here */
 
@@ -68,7 +68,7 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
       });
 
       this.set('model', this.get('store').createRecord({
-        type: 'machine',
+        type: 'host',
         '%%DRIVERNAME%%Config': config,
       }));
     },
