@@ -3,6 +3,10 @@ let ZONES = [
   "newton",
   "joule",
   "pascal",
+  "lux",
+  "weber",
+  "augusta",
+  "monstera",
 ];
 
 let URLS =
